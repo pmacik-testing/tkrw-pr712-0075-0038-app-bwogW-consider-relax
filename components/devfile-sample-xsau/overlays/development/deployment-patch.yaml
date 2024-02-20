@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-xsau
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0038-tenant/tkrw-pr712-0075-0038-app/devfile-sample-xsau@sha256:84771adcf7b0632b7c3b9b49a1c1be7c41ec9d6ca88531be7b018683292d8029
+        name: my-nodejs
+        resources: {}
+status: {}
